@@ -1,0 +1,33 @@
+table tr td{
+border: 2px solid black;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+  }
+
+td{
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: coral;}
+/* tr:nth-child(even) {background-color: #e4d8d8;} */
+/* tr {
+    background-color: #04AA6D;
+    color: white;
+  } */
+  h1 {
+    text-align: center;
+    background-color: royalblue;
+    color: yellow;
+  }
+  th{
+    border: 5px solid green;
+    padding: 15px;
+    font-size: 20px;
+    color: red;
+    background-color: yellow;
+  }
