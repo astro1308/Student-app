@@ -8,7 +8,10 @@ use App\Models\student;
 class StudentsController extends Controller
 {
     function show(){
-    $data = student::all();
+    $data = student::when (request('q'),function ($query){
+        $query ->where('id', request('q'));
+        $query ->orWhere('name', 'like',  '%'.request('q').'%');
+    })->get();
     return view('list',['students'=>$data]);
     }
     //

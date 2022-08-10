@@ -1,4 +1,7 @@
 <h1>Student Database Data</h1>
+<form method="get" action="">
+    <input type="text" name="q" value="{{ request('q') }}" >
+</form>
 <table>
     <tr>
         <th>Name</th>
